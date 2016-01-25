@@ -61,8 +61,8 @@ fetch <- function(searchterm)
     return(scores.df)
   }
   
-  pos <- scan('C:/Users/pranay/Documents/positive-words.txt', what='character', comment.char=';') #positive dictionary
-  neg <- scan('C:/Users/pranay/Documents/negative-words.txt', what='character', comment.char=';') #negative dictionary
+  pos <- scan('working directory/positive dictionary', what='character', comment.char=';') 
+  neg <- scan('working directory/negative dictionary', what='character', comment.char=';') 
   pos.words <- c(pos, 'kudos')
   neg.words <- c(neg, 'wtf', 'wait', 'waiting', 'epicfail','jerk','doesn\'t','screwed')
   
